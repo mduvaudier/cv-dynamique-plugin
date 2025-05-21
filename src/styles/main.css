@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text-one);
+}
+
+:root {
+    --color-text-one: #333333;
+    --color-text-two: #666666;
+    --accent-color: #DE3163;
+}
+
+.cv-dynamique h1 {
+    font-size: calc(2.4rem + 1.5vw);
+    line-height: calc(2.2rem + 1.5vw);
+    font-weight: 700;
+    color: var(--accent-color);
+    font-family: 'Bagel Fat One', cursive;
+    text-transform: uppercase;
+}
+
+.cv-dynamique h2 {
+    font-size: calc(2.3rem + 2vw);
+    font-weight: 700;
+    line-height: calc(2.3rem + 2vw);
+    margin-bottom: 2rem;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.cv-dynamique h3 {
+    font-size: calc(1rem + 0.5vw);
+    font-weight: 500;
+    line-height: calc(1.3rem + 0.5vw);
+}
+
+/** Image de fond **/
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/** Header **/
+
+.cv-dynamique header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.cv-dynamique header button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.cv-dynamique nav {
+    width: 100%;
+    display: flex;
+    gap: calc(0.5rem + 1vw);
+    justify-content: end;
+    padding: 1.5vw 2vw;
+}
+
+
+/** Top **/
+
+.top {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photoFond {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/** Card **/
+
+.card {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    width: calc(50vw + 17vh);
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.card-info h4 {
+    /*font-size: 1rem;*/
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.card-ligne-lieu {
+    margin: 0.7rem 0 0.7rem 0;
+    font-size: 1.3rem;
+}
+
+.card-lieu {
+    font-weight: 600;
+}
+
+.card-ottawa {
+    color: var(--color-text-two);
+}
+
+.card-info a {
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 800;
+    font-size: 1.3rem;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+}
+
+/** Timeline **/
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: white;
+}
+
+.timecard {
+    width: 90vw;
+    border-left: var(--accent-color) solid 0.5rem;
+}
+
+.tcard{
+    width: 90%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.tcard-content{
+    padding: 3vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tcard-companies-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.tcard-company{
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.tcard-company-link{
+    margin-right: 10px;
+    word-wrap: break-word;
+}
+
+.tcard-keywords{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.keyword{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0.5rem;
+    margin: 1vh 1vw;
+    font-size: 0.8rem;
+}
+
+.tcard-date {
+    background-color: var(--accent-color);
+    width: 100%;
+    display: flex;
+    padding: 7px 2vw;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.tcard-title {
+    /*padding: 0 2vw;*/
+    font-weight: 600;
+}
+
+.timecard-dot {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--accent-color);
+    border-radius: 100%;
+    position: relative;
+    top: 3.75rem;
+    left: -1.25rem;
+    border: white solid 0.4rem;
+}
+
+.in-between {
+    height: 30vh;
+}
+
+/** Portfolio **/
+
+.portfolio {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.buttons-portfolio {
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.button:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.button-active {
+    color: white;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.portfolio-table {
+    width: 100%;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.project-item {
+    position: relative;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.project-item h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.lien-item {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+/* -------------------- Responsive : Mobile -------------------- */
+@media (max-width: 900px) {
+    .card{
+        flex-direction: column;
+    }
+
+    .project-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-image{
+        width: 100%;
+    }
+
+    .card-info{
+        width: 100%;
+        padding: 1rem;
+    }
+
+}
