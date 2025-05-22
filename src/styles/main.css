@@ -12,6 +12,10 @@
     --accent-color: #DE3163;
 }
 
+a{
+    color: var(--accent-color)
+}
+
 .cv-dynamique h1 {
     font-size: calc(2.4rem + 1.5vw);
     line-height: calc(2.2rem + 1.5vw);
@@ -222,7 +226,7 @@
 .keyword{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 0.5rem;
-    margin: 1vh 1vw;
+    margin: 1vh;
     font-size: 0.8rem;
 }
 
