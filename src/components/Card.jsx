@@ -10,8 +10,10 @@ export default function Card() {
         <img src={avatar} alt={t("card.altphoto")} />
       </div>
       <div className="card-info">
-        <h1>{t("card.name")}</h1>
-        <h3>{t("card.post")}</h3>
+        <hgroup>
+          <h1>{t("card.name")}</h1>
+        <h2>{t("card.post")}</h2>
+        </hgroup>
         <div className="card-ligne-lieu">
           <span className="card-lieu">{t("card.place")}</span>
           <span className="card-ottawa">{t("card.town")}</span>

@@ -4,7 +4,6 @@ export default function Timecard(props) {
   const companies = props.company;
   const keywords = props.keywords
   const { t } = useTranslation();
-  console.log(props.keywords)
 
   const companiesList = Array.isArray(companies)
     ? companies.map((item, id) => {

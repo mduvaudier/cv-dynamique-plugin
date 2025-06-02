@@ -1,9 +1,8 @@
-import { forwardRef, useState, useEffect } from "react";
 import timelineData from "../assets/data/timeline";
 import Timecard from "./Timecard";
 import { useTranslation } from "react-i18next";
 
-const Timeline = forwardRef((props, ref) => {
+export default function Timeline(props) {
   const {t} = useTranslation()
 
   const timeline = timelineData.map((item) => (
@@ -18,11 +17,9 @@ const Timeline = forwardRef((props, ref) => {
   ));
 
   return (
-    <section className="timeline" ref={ref}>
+    <section id="timeline">
       <h2>{t("navbar.timeline")}</h2>
       {timeline}
     </section>
   );
-});
-
-export default Timeline;
+};

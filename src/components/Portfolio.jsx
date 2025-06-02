@@ -1,8 +1,8 @@
 import ProjectGrid from "./ProjectGrid";
-import { useState, forwardRef } from "react";
+import { useState} from "react";
 import { useTranslation } from "react-i18next";
 
-const Portfolio = forwardRef((props, ref) => {
+export default function Portfolio(props){
   const [isProjectTabOpen, setIsProjectTabOpen] = useState(true);
   const [isCourseTabOpen, setIsCourseTabOpen] = useState(false);
   const [isWordpressTabOpen, setIsWordpressTabOpen] = useState(false);
@@ -25,7 +25,7 @@ const Portfolio = forwardRef((props, ref) => {
   }
 
   return (
-    <section className="portfolio" ref={ref}>
+    <section id="portfolio">
       <h2>{t("navbar.portfolio")}</h2>
       <div className="buttons-portfolio">
         <button
@@ -66,6 +66,4 @@ const Portfolio = forwardRef((props, ref) => {
       </div>
     </section>
   );
-});
-
-export default Portfolio;
+};
