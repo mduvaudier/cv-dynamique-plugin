@@ -6,6 +6,8 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
     "framer-motion": "^12.11.3",
     "i18n": "^0.15.1",
     "i18next-browser-languagedetector": "^8.1.0",

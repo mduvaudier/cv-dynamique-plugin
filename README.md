@@ -9,6 +9,7 @@ This project is an **interactive online resume** developed using **WordPress** (
 ## 🛠️ Technologies Used
 
 - React (with JSX and dynamic effects)
+- TypeScript
 - WordPress as a headless CMS
 - PHP for WordPress integration
 - JavaScript, HTML, CSS

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: CV Dynamique
  * Description: Plugin pour afficher un CV interactif React.
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: Marie Duvaudier
  */
 
